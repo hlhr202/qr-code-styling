@@ -84,7 +84,8 @@ export default class QRDot {
       ...args,
       draw: () => {
         // context.arc(0, 0, size / 2, 0, Math.PI * 2);
-        context.rect(-(size * 0.3), -(size * 0.3), size * 0.6, size * 0.6);
+        const scale = 0.8;
+        context.rect(-(size * (scale / 2)), -(size * (scale / 2)), size * scale, size * scale);
       }
     });
   }
